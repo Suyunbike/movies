@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body 
+class="bg-indigo-500  select-none">
+
+    <div 
+    class="container w-[80%] mx-auto h-[90vh] my-[5vh] bg-white rounded-md p-8 shadaw-md">
+        <!-- search -->
+        <label
+         class="w-full flex items-center px-6 py-2 rounded-md shadaw-md gap-x-2 bg-gray-100">
+            <i 
+            class='bx bx-search-alt-2 text-xl text-gray-500'>
+        </i>
+            <input
+             class="p-2 w-full outline-none bg-transparent"
+              type="search" 
+              id="search-input"
+               placeholder="Enter any movies title....">
+        </label>
+
+        <!-- Sidebar && main content  -->
+        <section 
+        class="flex gap-6 mt-6">
+            <aside
+             class="w-[250px] h-[350px] overflow-y-auto flex flex-col p-4 bg-gray-100 shadaw-sm rounded-md">
+                <ul>
+                    <li 
+                    data-type="" 
+                    class="px-2 py-1 mb-2 rounded-md bg-white text-gray-500 cursor-pointer transition duration-200 hover:shadaw-sm active:opacity-50 active:scale-90 transform border-2 border-indigo-500">
+                    All
+                </li>
+                    <li
+                     data-type="movie"
+                      class="px-2 py-1 mb-2 rounded-md bg-white text-gray-500 cursor-pointer transition duration-200 hover:shadaw-sm active:opacity-50 active:scale-90 transform border-indigo-500">
+                      Movies
+                    </li>
+                    <li
+                     data-type="series" 
+                     class="px-2 py-1 mb-2 rounded-md bg-white text-gray-500 cursor-pointer transition duration-200 hover:shadaw-sm active:opacity-50 active:scale-90 transform border-indigo-500">
+                     Series
+                    </li>
+                    <li 
+                    data-type="episode"
+                     class="px-2 py-1 mb-2 rounded-md bg-white text-gray-500 cursor-pointer transition duration-200 hover:shadaw-sm active:opacity-50 active:scale-90 transform border-indigo-500">
+                     Epicodes
+                    </li>          
+            </aside>
+
+            <main
+            class="p-3 h-[450px] w-[80%] gap-6 overflow-y-auto grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1" id="content">
+                No Content!
+            </main>
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
